@@ -3,62 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <meta name="description" content="Resume and portfolio of Rahul Keshervani, Senior Software Engineer.">
+    <title>Rahul Keshervani | Senior Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>My Resume</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../blog/blog.html">Blog</a></li>
-            </ul>
+    <header class="site-header">
+        <a class="wordmark" href="../index.html">RK<span>.</span></a>
+        <nav aria-label="Main navigation">
+            <a href="../index.html">Home</a>
+            <a href="../blog/blog.html">Writing</a>
+            <a class="nav-action" href="https://drive.google.com/file/d/1irqF0THJF-4pciD_PNke1XlHG7s8dFnh/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download PDF <span aria-hidden="true">↗</span></a>
         </nav>
-        <div class="download-link">
-            <a href="https://drive.google.com/file/d/1irqF0THJF-4pciD_PNke1XlHG7s8dFnh/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                Download PDF Version
-            </a>
-        </div>
     </header>
-    <main>
-        <section>
-            <h2>Contact Information</h2>
-            <p>Name: Rahul Keshervani</p>
-            <p>Email: rahulkeshervani@gmail.com</p>
+    <main class="page-shell">
+        <section class="intro" aria-labelledby="intro-title">
+            <p class="eyebrow">Senior Software Engineer · Pune, India</p>
+            <h1 id="intro-title">Rahul<br><em>Keshervani</em></h1>
+            <div class="intro-bottom">
+                <p class="summary">I build dependable systems and products that turn complex data into useful decisions. Currently working on FTSE Russell portfolios at the London Stock Exchange.</p>
+                <div class="contact-links">
+                    <a href="mailto:rahulkeshervani@gmail.com">rahulkeshervani@gmail.com <span aria-hidden="true">↗</span></a>
+                    <a href="../blog/blog.html">Read my writing <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Education</h2>
-            <p>Degree: B.Tech Computer Engineering</p>
-            <p>Institution: College of Engineering, Pune</p>
-            <p>Year of Graduation: 2020</p>
-        </section>
-        <section>
-            <h2>Experience</h2>
-            <p><strong>Senior Software Engineer @ London Stock Exchange</strong> (Jan 2025 - Present)</p>
-            <p>Constructing FTSE Rusell portfolios using Java SpringBoot Microservices. Using TDD and Agile.</p>
-            <br>
-            <p><strong>SDE 2 (May 2024 - Jan 2025) & SDE (Nov 2022 - May 2024) @ media.net</strong></p>
-            <p>Delivered A/B test features which increased Ad revenue and profits by 10% for a system with daily million users.</p>
-            <p>Rewrote ETL Pipeline from scratch in Scala and Spark from AWS Redshift SQLs.</p>
-            <p>Took responsibility of the Ad ranking module given to me. Stayed Oncall to fix any prod issues.</p>
-            <br>
-            <p><strong>SDE @ Credit Suisse</strong> (July 2020 - Nov 2022)</p>
-            <p>Developed Java SpringBoot Microservices for data sourcing and took responsibility for these services.</p>
-            <p>Developed Python Microservices using Flask and Django to automate the file processing.</p>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>PHP</li>
-            </ul>
-        </section>
-        
+
+        <div class="content-grid">
+            <div class="primary-column">
+                <section class="section-block" aria-labelledby="experience-title">
+                    <div class="section-heading"><span>01</span><h2 id="experience-title">Experience</h2></div>
+                    <div class="timeline">
+                        <article class="role current-role">
+                            <div class="role-meta"><span>Jan 2025 — Present</span><span class="role-status">Current</span></div>
+                            <h3>Senior Software Engineer</h3>
+                            <p class="company">London Stock Exchange</p>
+                            <p>Constructing FTSE Russell portfolios with Java and Spring Boot microservices, using test-driven development and Agile practices.</p>
+                        </article>
+                        <article class="role">
+                            <div class="role-meta"><span>Nov 2022 — Jan 2025</span></div>
+                            <h3>SDE 2 · SDE</h3>
+                            <p class="company">media.net</p>
+                            <ul>
+                                <li>Delivered A/B testing features that increased ad revenue and profits by 10% for a platform serving millions of users daily.</li>
+                                <li>Rebuilt an ETL pipeline from AWS Redshift SQL in Scala and Spark.</li>
+                                <li>Owned the ad ranking module and supported it through production on-call.</li>
+                            </ul>
+                        </article>
+                        <article class="role">
+                            <div class="role-meta"><span>Jul 2020 — Nov 2022</span></div>
+                            <h3>Software Development Engineer</h3>
+                            <p class="company">Credit Suisse</p>
+                            <ul>
+                                <li>Developed Java Spring Boot microservices for data sourcing and took ownership of their delivery.</li>
+                                <li>Built Python microservices with Flask and Django to automate file processing.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="section-block" aria-labelledby="achievement-title">
+                    <div class="section-heading"><span>02</span><h2 id="achievement-title">Selected achievement</h2></div>
+                    <article class="achievement">
+                        <p class="achievement-label">Build What Moves India Hackathon · 2026</p>
+                        <h3>Top 250 selection<br><em>Round 2 participant</em></h3>
+                        <p>Selected individually among the Top 250 participants and advanced to Round 2. Winners are yet to be announced.</p>
+                        <div class="achievement-links">
+                            <a href="https://cpgrams-hackathon.vercel.app/" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
+                            <a href="https://buildwhatmovesindia.com/top-250" target="_blank" rel="noopener noreferrer">Official selection <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                </section>
+            </div>
+
+            <aside class="side-column">
+                <section class="section-block" aria-labelledby="skills-title">
+                    <div class="section-heading"><span>03</span><h2 id="skills-title">Toolkit</h2></div>
+                    <div class="skill-list">
+                        <span>Java</span><span>Python</span><span>Scala</span><span>Spring Boot</span><span>Apache Spark</span><span>Flask</span><span>Django</span><span>PHP</span>
+                    </div>
+                </section>
+                <section class="section-block education" aria-labelledby="education-title">
+                    <div class="section-heading"><span>04</span><h2 id="education-title">Education</h2></div>
+                    <h3>B.Tech, Computer Engineering</h3>
+                    <p>College of Engineering, Pune</p>
+                    <p class="muted">Graduated 2020</p>
+                </section>
+                <section class="availability" aria-label="Availability">
+                    <span class="availability-dot"></span>
+                    <div><strong>Open to good problems</strong><p>Let’s build something useful.</p></div>
+                    <a href="mailto:rahulkeshervani@gmail.com" aria-label="Email Rahul">↗</a>
+                </section>
+            </aside>
+        </div>
     </main>
     <footer>
         <p>&copy; 2026 Rahul Keshervani</p>
+        <a href="mailto:rahulkeshervani@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
     </footer>
 </body>
 </html>
